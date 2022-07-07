@@ -12,7 +12,7 @@ namespace cicdExample
             var desc = celsius switch
             {
                 var n when n >= 25 => "HOT",
-                var n when n >= 0 => "COLD",
+                var n when n >= 0 && n <= 10 => "COLD",
                 var n when n < 0 => "FREEZING",
                 _ => "NORMAL" // default value
             };
